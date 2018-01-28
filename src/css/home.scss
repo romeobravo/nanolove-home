@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+
+.landing {
+  position: relative;
+  width: 100%;
+  height: 80%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    height: 40%;
+    pointer-events: none;
+  }
+
+  &__title {
+    font-family: 'Lobster Two', cursive;
+    font-size: 82px;
+    color: #ffffff;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    margin: 0;
+  }
+
+  &__tagline {
+    font-family: 'Lobster Two', cursive;
+    font-size: 32px;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    margin: 0;
+  }
+
+  &__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ad1457;
+    background: linear-gradient(-45deg, #ad1457 0%, #c2185b 100%);
+    transform-origin: 0;
+    transform: skewY(-3.5deg);
+  }
+
+  &__canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+}

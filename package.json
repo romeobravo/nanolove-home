@@ -1,0 +1,35 @@
+{
+  "name": "nanolove-home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":
+      "webpack-dev-server --content-base=src/public --hot --inline --watch --config webpack.development.js",
+    "build": "webpack --config webpack.config.js",
+    "upload": "node scripts/upload.js",
+    "deploy": "npm run build && npm run upload"
+  },
+  "author": "Ruben Buitelaar <rubenbuitelaar@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.38",
+    "@babel/preset-env": "^7.0.0-beta.38",
+    "aws-sdk": "^2.187.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^8.0.0-beta.0",
+    "copy-webpack-plugin": "^4.3.1",
+    "css-loader": "^0.28.9",
+    "dotenv": "^4.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "prettier": "^1.10.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "*"
+  }
+}

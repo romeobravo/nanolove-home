@@ -1,0 +1,22 @@
+# A user can have editorconfig defaults in a parent folder,
+# but settings in this .editorconfig take precedence.
+root = false
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+charset = utf-8
+max_line_length = 80
+
+indent_style = space
+indent_size = 2
+
+# Markdown uses trailing whitespace for linebreaks.
+[{*.markdown, *.md}]
+trim_trailing_whitespace = false
+
+[{*.yml, *.yaml}]
+trim_trailing_whitespace = false
