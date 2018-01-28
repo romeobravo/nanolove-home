@@ -1,6 +1,6 @@
 # Nanolove home
 
-Homepage for <nanolove.org>
+Homepage for [nanolove.org]
 
 ## Todo
 
